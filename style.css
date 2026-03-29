@@ -1,0 +1,40 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0; padding: 0;
+  background: #f0f0f0; color: #333; text-align: center;
+}
+
+/* Header */
+header {
+  background: #6c5ce7;
+  color: white;
+  padding: 2rem;
+  animation: slideDown 1s;
+}
+
+header h1 { margin: 0; font-size: 2.5rem; }
+header p { margin-top: 0.5rem; font-size: 1.2rem; }
+
+@keyframes slideDown { from { transform: translateY(-50px); opacity: 0;} to { transform: translateY(0); opacity: 1;} }
+
+/* Sections */
+section { padding: 2rem; }
+.gallery { display: grid; grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); gap: 1rem; justify-items:center; }
+.service { background:#ffeaa7; border-radius:10px; padding:1rem; animation: fadeInUp 1s; }
+
+@keyframes fadeInUp { from {opacity:0; transform:translateY(20px);} to {opacity:1; transform:translateY(0);} }
+
+.btn { display:inline-block; padding:1rem 2rem; margin:1rem 0; background:#00b894; color:white; text-decoration:none; border-radius:10px; transition:0.2s; }
+.btn:hover { transform: scale(1.1); }
+
+/* Tables */
+table { width: 90%; margin:auto; border-collapse: collapse; animation: fadeInUp 1s; }
+th, td { border:1px solid #333; padding:0.8rem; }
+th { background:#6c5ce7; color:white; }
+
+/* Contact */
+.contact a { color:#0984e3; text-decoration:none; font-weight:bold; }
+.contact a:hover { text-decoration:underline; }
+
+/* Footer */
+footer { padding:1rem; background:#2d3436; color:white; margin-top:2rem; }
